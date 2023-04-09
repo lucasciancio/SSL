@@ -1,7 +1,7 @@
 // Programa Hello C
 // Muestra en pantalla el mensaje "Hello, world!"
 // Autor: Lucas Ciancio
-// Última modificacion: 
+// Última modificación: 08/04/23 
 
 
 #include <stdio.h>
