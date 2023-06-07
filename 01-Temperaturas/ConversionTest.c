@@ -3,11 +3,18 @@
 #include <assert.h>
 #include "Conversion.h"
 
-int main(void) {
+const float epsilon = 0.0001; 
 
+
+int main(void) {
     
 
 
     return 0;
 }
 
+
+
+int floatcomp(float x, float y) {
+    return abs(x-y) < epsilon;
+}
