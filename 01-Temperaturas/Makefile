@@ -18,6 +18,9 @@ tablas: Conversion.o #TablasDeConversion.o
 #TablasDeConversion.o: TablasDeConversion.c
 #	gcc -c TablasDeConversion.c -o TablasDeConversion.o
 
+clean:
+	rm -rf tablas ConversionTests *.o
+
 
 #### PREGUNTAS ####
 

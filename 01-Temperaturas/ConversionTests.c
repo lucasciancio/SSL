@@ -2,17 +2,20 @@
 
 #include <assert.h>
 #include "Conversion.h"
+#include <stdlib.h>
 
 const float epsilon = 0.001; 
+
+int floatcomp(float x, float y);
 
 
 int main(void) {
     
     // Pruebas función Celsius
 
-    assert(floatcomp(Celius(0.0),-17.8) == 1);
-    assert(floatcomp(Celius(160.0),71.1) == 1);
-    assert(floatcomp(Celius(300.0),148.9) == 1);
+    assert(floatcomp(Celsius(0.0),-17.8) == 1);
+    assert(floatcomp(Celsius(160.0),71.1) == 1);
+    assert(floatcomp(Celsius(300.0),148.9) == 1);
 
     // Pruebas función Fahrenheit
 
