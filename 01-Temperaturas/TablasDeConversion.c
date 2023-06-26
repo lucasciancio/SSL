@@ -21,8 +21,8 @@ int main (void) {
 
 
 void TablaCel_Fahr() {
-    printf("Tabla de conversión de celsius a fahrenheit\n\n");
-    printf("%-6s \t %-6s \n", "°C", "°F");
+    printf("Tabla de conversion de celsius a fahrenheit\n\n");
+    printf("%-6s \t %-6s \n", "C", "F");
     
     float fahr;
     
@@ -38,8 +38,8 @@ void TablaCel_Fahr() {
 
 
 void TablaFahr_Cel() {
-    printf("Tabla de conversión de fahrenheit a celsius\n\n");
-    printf("%-6s \t %-6s \n", "°F", "°C");
+    printf("Tabla de conversion de fahrenheit a celsius\n\n");
+    printf("%-6s \t %-6s \n", "F", "C");
 
     float celsius;
 

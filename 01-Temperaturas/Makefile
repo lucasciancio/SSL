@@ -1,7 +1,7 @@
 all: tests tablas
 
 tests: ConversionTests
-	./ ConversionTests
+	./ConversionTests
 
 ConversionTests: Conversion.o #ConversionTests.o
 	gcc ConversionTests.c Conversion.o -o ConversionTests
@@ -20,6 +20,3 @@ tablas: Conversion.o #TablasDeConversion.o
 
 clean:
 	rm -rf tablas ConversionTests *.o
-
-
-#
