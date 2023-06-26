@@ -22,10 +22,4 @@ clean:
 	rm -rf tablas ConversionTests *.o
 
 
-#### PREGUNTAS ####
-
-# ¿Se supone que ConversionTests.c nunca debe ser modificado?. Porque según estas reglas, si yo modifico
-# Conversion.c, ConversionTests.c será recompilado, pero si modifico directamente el ConversionTests.c, se
-# corren los tests sin haberlos compilado, ¿no?. Lo mismo pasa con TablasDeConversion.c.
-# Entonces, ¿no habría que agregar las partes que dejé comentadas?
 
