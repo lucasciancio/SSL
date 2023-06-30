@@ -32,8 +32,6 @@ int floatcomp(float x, float y) {
     return abs(x-y) < epsilon;
 }
 
-
-
 // TABLAS DE CASOS DE PRUEBA
 
 /*

@@ -1,16 +1,42 @@
-all: tests tablas
+all: ConversionTests.exe Tablas.exe
 
-tests: ConversionTests
-	./ConversionTests
-
-ConversionTests: Conversion.o
+ConversionTests.exe: Conversion.o ConversionTests.o
 	gcc ConversionTests.c Conversion.o -o ConversionTests
+	./ConversionTests.exe
 
 Conversion.o: Conversion.c
 	gcc -c Conversion.c -o Conversion.o
 
-tablas: Conversion.o
-	gcc TablasDeConversion.c Conversion.o -o tablas
+Tablas.exe: Conversion.o TablasDeConversion.o
+	gcc TablasDeConversion.c Conversion.o -o Tablas.exe
+
+TablasDeConversion.o: TablasDeConversion.c
+	gcc -c TablasDeConversion.c -o TablasDeConversion.o
 
 clean:
-	rm -rf tablas ConversionTests *.o
+	rm -rf Tablas.exe ConversionTests.exe *.o
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## REGLA 1
+
+target: prerequisites
+	comando
+
+
+## REGLA 2
+
+
+## REGLA 3
